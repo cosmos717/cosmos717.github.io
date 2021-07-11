@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Momentumre</title>
+</head>
+
+<body>
+  <div class="world">
+    <h2 id="date"></h2>
+    <div class="login-container">
+      <form class="login-form hidden">
+        <input 
+        id = "login-name"
+        type="text" 
+        placeholder="What is your name?"
+        required maxlength="15">
+        <button type="submit">Log In</button>
+      </form>
+    </div>
+    <h2 id="clock">
+      00:00:00
+    </h2>
+  <h1 id="greeting" class="hidden"></h1>
+  <div class="todo-container">
+    <form id="todo-form">
+      <input type="text" placeholder="Write a To Do." required>
+    </form>
+    <ul id="todo-list"></ul>
+  </div>
+  <div id="weather-container">
+    <span class="city">city</span><br/>
+    <span class="temp">temp</span><br/>
+    <span class="main_weather">weather</span>
+  </div>
+<footer>
+  <div class="quotes">
+      <span></span><br/>
+      <span></span>
+  </div>
+</footer>
+  </div>
+  <div class="floor"></div>
+<script src="./background.js"></script>
+<script src="./greeting.js"></script>
+<script src="./clock_date.js"></script>
+<script src="./todo.js"></script>
+<script src="./weather.js"></script>
+<script src="./quotes.js"></script>
+</body>
+</html>
